@@ -3,10 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>寒区水文与灾害研究团队</title>
+
+    <title>寒区水文与灾害研究团队 | 研究方向与科研成果</title>
+    <meta name="description" content="寒区水文与灾害研究团队聚焦积雪、冰川、冻土及其主导的寒区水文过程，开展寒区灾害形成机制、演化过程、监测预警与风险评估研究，服务流域水资源管理与防灾减灾决策。">
+    <meta name="author" content="寒区水文与灾害研究团队">
+    <meta name="theme-color" content="#163c68">
+
+    <!-- 社交平台与搜索引擎收录 -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="寒区水文与灾害研究团队">
+    <meta property="og:description" content="积雪、冰川、冻土驱动的寒区水文过程与灾害机理研究，覆盖野外观测、遥感反演、模型模拟与监测预警。">
+    <!-- TODO: og:url 与 og:image 建议改为完整绝对地址，例如 https://<你的域名>/images/og-cover.jpg -->
+    <meta property="og:image" content="images/og-cover.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <a class="skip-link" href="#main">跳到主要内容</a>
 
     <!-- 顶部信息栏 -->
     <div class="topbar">
@@ -16,11 +32,11 @@
         </div>
     </div>
 
-    <!-- Logo 区域 -->
+    <!-- 标识区 -->
     <header class="header">
         <div class="container header-flex">
             <div class="logo-area">
-                <img src="images/logo.png" alt="寒区水文与灾害 Logo">
+                <img src="images/logo.png" alt="寒区水文与灾害研究团队标识" width="72" height="72">
                 <div>
                     <h1>寒区水文与灾害研究团队</h1>
                     <p>COLD REGION HYDROLOGY AND HAZARDS RESEARCH GROUP</p>
@@ -28,14 +44,13 @@
             </div>
 
             <div class="language">
-                <span>探索积雪雪崩、揭示水文效应、服务防灾减灾</span>
-                <button>EN</button>
+                探索积雪雪崩 · 揭示水文效应 · 服务防灾减灾
             </div>
         </div>
     </header>
 
     <!-- 导航栏 -->
-    <nav class="nav">
+    <nav class="nav" aria-label="主导航">
         <div class="container nav-box">
             <a href="#home" class="active">首页</a>
             <a href="#research">研究方向</a>
@@ -46,53 +61,50 @@
         </div>
     </nav>
 
+    <main id="main">
+
     <!-- Banner -->
-   <section class="banner" id="home">
+    <section class="banner" id="home">
 
-    <!-- 动态视频背景 -->
-    <video
-        class="banner-video"
-        autoplay
-        muted
-        loop
-        playsinline
-        poster="images/banner.jpg"
-    >
-        <source src="video/banner.mp4" type="video/mp4">
-    </video>
+        <!-- 动态视频背景（装饰性，无音轨） -->
+        <video
+            class="banner-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-hidden="true"
+            tabindex="-1"
+        >
+            <source src="video/banner.mp4" type="video/mp4">
+        </video>
 
-    <!-- 深色遮罩 -->
-    <div class="banner-mask"></div>
+        <!-- 深色遮罩 -->
+        <div class="banner-mask"></div>
 
-    <!-- 文字内容 -->
-    <div class="container banner-content">
+        <!-- 文字内容 -->
+        <div class="container banner-content">
 
-        <h2>寒区水文过程与灾害机理研究</h2>
+            <h2>寒区水文过程与灾害机理研究</h2>
 
-        <p>
-            团队围绕积雪、冰川、冻土及其主导的寒区水文过程，
-            开展寒区灾害形成机制、演化过程、监测预警与风险评估研究，
-            服务于流域水资源管理与防灾减灾决策。
-        </p>
+            <p>
+                团队围绕积雪、冰川、冻土及其主导的寒区水文过程，
+                开展寒区灾害形成机制、演化过程、监测预警与风险评估研究，
+                服务于流域水资源管理与防灾减灾决策。
+            </p>
 
-        <div class="buttons">
-
-            <a href="#research" class="btn white">
-                查看研究方向
-            </a>
-
-            <a href="#team" class="btn border">
-                查看团队成员
-            </a>
+            <div class="buttons">
+                <a href="#research" class="btn white">查看研究方向</a>
+                <a href="#team" class="btn border">查看团队成员</a>
+            </div>
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
     <!-- 概况卡片 -->
-    <section class="overview">
+    <section class="overview" aria-label="团队概况">
         <div class="container cards">
 
             <div class="card">
@@ -100,16 +112,16 @@
                 <h3>寒区水文与灾害</h3>
                 <p>
                     聚焦积雪、冰川、冻土、融雪径流、雪崩、冰湖溃决、
-                    寒区洪水等典型寒区水文与灾害问题。
+                    寒区洪水等典型问题。
                 </p>
             </div>
 
             <div class="card">
                 <span>技术主线</span>
-                <h3>机理-监测-预警</h3>
+                <h3>机理—监测—预警</h3>
                 <p>
-                    融合野外观测、遥感反演、数值模拟和数据分析，
-                    构建寒区水文与灾害全过程研究体系。
+                    融合野外观测、遥感反演、数值模拟与数据分析，
+                    构建全过程研究体系。
                 </p>
             </div>
 
@@ -118,7 +130,7 @@
                 <h3>观测与分析</h3>
                 <p>
                     依托野外监测、流域观测、遥感数据与模型平台，
-                    开展多尺度寒区过程诊断与风险评估。
+                    开展多尺度过程诊断。
                 </p>
             </div>
 
@@ -126,8 +138,8 @@
                 <span>团队特色</span>
                 <h3>交叉融合研究</h3>
                 <p>
-                    团队结合水文学、冰冻圈科学、灾害学与地理信息技术，
-                    开展寒区水文与灾害综合研究。
+                    结合水文学、冰冻圈科学、灾害学与地理信息技术，
+                    开展综合研究。
                 </p>
             </div>
 
@@ -136,7 +148,7 @@
 
     <!-- 研究方向 -->
     <section class="research" id="research">
-        <div class="container section-box">
+        <div class="container">
 
             <div class="title">
                 <h2>研究方向</h2>
@@ -145,29 +157,29 @@
 
             <div class="research-grid">
 
-                <div class="research-item">
-                    <img src="images/research1.jpg" alt="冰雪水文过程">
+                <article class="research-item">
+                    <img src="images/research1.jpg" alt="冰川前缘融雪径流与水文监测设施" width="1448" height="1086" loading="lazy">
                     <div>
                         <h3>冰雪水文过程</h3>
                         <p>研究积雪、冰川与融雪径流过程及其对流域水资源的影响。</p>
                     </div>
-                </div>
+                </article>
 
-                <div class="research-item">
-                    <img src="images/research2.jpg" alt="寒区灾害监测">
+                <article class="research-item">
+                    <img src="images/research2.jpg" alt="野外积雪剖面观测与气象站维护" width="1448" height="1086" loading="lazy">
                     <div>
                         <h3>寒区灾害监测</h3>
                         <p>聚焦雪崩、冰湖溃决、寒区洪水等灾害的识别与动态监测。</p>
                     </div>
-                </div>
+                </article>
 
-                <div class="research-item">
-                    <img src="images/research3.jpg" alt="风险评估与预警">
+                <article class="research-item">
+                    <img src="images/research3.jpg" alt="遥感与模型结合的风险评估与预警分析" width="1448" height="1086" loading="lazy">
                     <div>
                         <h3>风险评估与预警</h3>
                         <p>开展寒区灾害风险评估、模拟预测与监测预警技术研究。</p>
                     </div>
-                </div>
+                </article>
 
             </div>
         </div>
@@ -176,7 +188,10 @@
     <!-- 核心工作 -->
     <section class="products" id="products">
         <div class="container">
-            <h2>核心工作</h2>
+            <div class="title">
+                <h2>核心工作</h2>
+                <span>Core Work</span>
+            </div>
 
             <div class="product-grid">
                 <div class="product-card">
@@ -209,71 +224,106 @@
     <!-- 团队成员 -->
     <section class="team" id="team">
         <div class="container">
-            <h2>团队成员</h2>
+            <div class="title">
+                <h2>团队成员</h2>
+                <span>Our Team</span>
+            </div>
 
-            <div class="team-box">
-                <img src="images/team.jpg" alt="团队照片">
-                <div>
-                    <h3>寒区水文与灾害研究团队</h3>
-                    <p>
-                        团队成员包括教师、博士研究生、硕士研究生及科研助理，
-                        长期从事寒区水文过程、冰冻圈变化及灾害风险研究。
-                    </p>
-                    <p>
-                        主要方向包括：积雪与融雪径流、冰川水文、雪崩与冰雪灾害、
-                        遥感监测、风险评估与预警。
-                    </p>
-                    <p>
-                        你后面可以把这里替换成真实团队介绍、负责人简介、
-                        代表成员名单等内容。
+            <div class="leader">
+                <div class="leader-head">
+                    <h3>李朝月</h3>
+                    <p class="leader-role">
+                        团队负责人 · 中国科学院地理科学与资源研究所<br>
+                        山地自然灾害与工程安全重点实验室
                     </p>
                 </div>
+
+                <p class="leader-text">
+                    主要围绕土壤侵蚀与水土保持、流域水沙过程以及气候变化驱动下的山地灾害开展研究。
+                    早期以水文模型与长序列观测资料为基础，在浙西寿昌江、闽江及泰国蒙河等流域
+                    开展产沙模拟与水沙演变归因；近年来聚焦青藏高原东南缘，研究气候变化背景下
+                    极端气候事件演变，以及山洪泥石流的水—土耦合过程与灾害风险防控。
+                </p>
+
+                <ul class="leader-tags">
+                    <li>土壤侵蚀与水土保持</li>
+                    <li>流域水沙过程模拟</li>
+                    <li>气候变化与极端事件</li>
+                    <li>山地灾害风险防控</li>
+                </ul>
+
+                <!-- TODO: 补充负责人职称（研究员 / 副研究员等）、个人主页链接与公开邮箱；如需配个人照片，可放入 images/leader.jpg -->
             </div>
+
+            <p class="team-note">
+                团队由教师、博士研究生、硕士研究生及科研助理组成，长期从事寒区水文过程、
+                冰冻圈变化及灾害风险研究。主要方向包括积雪与融雪径流、冰川水文、
+                雪崩与冰雪灾害、遥感监测、风险评估与预警。
+            </p>
         </div>
     </section>
 
     <!-- 科研成果 -->
     <section class="achievement" id="achievement">
         <div class="container">
-            <h2>科研成果</h2>
+            <div class="title">
+                <h2>科研成果</h2>
+                <span>Publications</span>
+            </div>
 
-            <div class="number-grid">
-                <div>
-                    <strong>10+</strong>
-                    <p>学术论文</p>
+            <div class="stat-band">
+                <div class="stat">
+                    <strong>3<span>篇</span></strong>
+                    <p>SCI 论文</p>
                 </div>
-                <div>
-                    <strong>5+</strong>
-                    <p>研究专题</p>
-                </div>
-                <div>
-                    <strong>8+</strong>
-                    <p>观测样点</p>
-                </div>
-                <div>
-                    <strong>3+</strong>
-                    <p>预警方向</p>
+                <div class="stat">
+                    <strong>5<span>篇</span></strong>
+                    <p>中文核心论文</p>
                 </div>
             </div>
+
+            <p class="stat-note">统计截至 2026 年 11 月，完整论文清单可向团队索取。</p>
         </div>
     </section>
 
     <!-- 联系我们 -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2>联系我们</h2>
-            <p>团队名称：寒区水文与灾害研究团队</p>
-            <p>研究方向：积雪水文、寒区灾害、监测预警</p>
-            <p>微信公众号：寒区水文与灾害</p>
-            <p>邮箱：your_email@example.com</p>
-            <p>地址：这里替换为你的单位地址</p>
+            <div class="title">
+                <h2>联系我们</h2>
+                <span>Contact</span>
+            </div>
+
+            <dl class="contact-list">
+                <div>
+                    <dt>团队名称</dt>
+                    <dd>寒区水文与灾害研究团队</dd>
+                </div>
+                <div>
+                    <dt>所属单位</dt>
+                    <dd>中国科学院地理科学与资源研究所</dd>
+                </div>
+                <div>
+                    <dt>研究方向</dt>
+                    <dd>积雪水文、寒区灾害、监测预警</dd>
+                </div>
+                <div>
+                    <dt>微信公众号</dt>
+                    <dd>寒区水文与灾害</dd>
+                </div>
+                <!-- TODO: 补充联系邮箱与办公地址 -->
+            </dl>
         </div>
     </section>
 
+    </main>
+
     <!-- 页脚 -->
     <footer>
-        <p>© 2026 寒区水文与灾害研究团队 | Cold Region Hydrology and Hazards Research Group</p>
+        <p>© <span id="year">2026</span> 寒区水文与灾害研究团队 · Cold Region Hydrology and Hazards Research Group</p>
     </footer>
+
+    <script src="js/app.js" defer></script>
 
 </body>
 </html>
